@@ -1,0 +1,33 @@
+# Claude Agent — default configuration
+# Override these via environment variables or a .env file.
+
+llm:
+  provider: openai          # openai | anthropic
+
+openai:
+  model: gpt-4o
+  base_url: ""
+
+anthropic:
+  model: claude-sonnet-4-6-20250514
+
+agent:
+  max_iterations: 10
+  temperature: 0.7
+  max_tokens: 4096
+
+system_prompt: |
+  You are Claude Agent, a helpful AI assistant with access to tools.
+  Follow this process for each user request:
+  1. Understand the user's goal.
+  2. If you need information or need to take action, use the appropriate tool.
+  3. Observe the tool result and decide if more actions are needed.
+  4. When you have enough information, provide a clear, well-structured final answer.
+  Be thorough, accurate, and helpful.
+
+memory:
+  dir: ./data/memory
+  vector_store_dir: ./data/vector_store
+
+logging:
+  level: INFO
