@@ -1,5 +1,6 @@
 # Claude Agent
 
+基于本地Ollam大模型的功能强大的免费AI助手，帮助你完成文件操作、网络请求、系统操作、代码编写、网络搜索及多步骤任务处理等等各种你需要的电脑操作。
 A modular, multi-provider Python AI Agent framework following the **ReAct** (Reasoning + Acting) paradigm.
 
 ## Features
